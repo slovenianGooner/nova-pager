@@ -1,0 +1,30 @@
+{
+    "name": "sloveniangooner/nova-pager",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "sloveniangooner/locale-anywhere": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sloveniangooner\\NovaPager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sloveniangooner\\NovaPager\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
