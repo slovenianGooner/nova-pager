@@ -31,15 +31,4 @@ trait HasTranslations
         // translation for the current app locale.
         return $this->setTranslation($key, $this->getLocale(), $value);
     }
-
-    /**
-     * Get data from the database
-     *
-     * @return void
-     */
-    public function getDataAttribute()
-    {
-        $data = json_decode($this->attributes["data"]);
-        return $data->{app()->getLocale()};
-    }
 }
