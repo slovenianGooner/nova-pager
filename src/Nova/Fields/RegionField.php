@@ -48,7 +48,7 @@ class RegionField extends Field
 
         $regionsTableName = NovaPager::getRegionsTableName();
         $locale = request()->get('locale');
-        $this->rules('required', "unique:$regionsTableName,template,{{resourceId}},id,locale,$locale");
+        $this->rules('required', "unique:$regionsTableName,template,{{resourceId}},id");
     }
 
     /**
