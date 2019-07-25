@@ -3,7 +3,7 @@
 namespace App\Nova\Templates;
 
 use Illuminate\Http\Request;
-use SlovenianGooner\NovaPager\Template;
+use Sloveniangooner\NovaPager\Template;
 
 class :className extends Template
 {
